@@ -25,6 +25,7 @@ public class Vehiculo {
 		this.fabricante = fabricante;
 		cantidadVehiculos++;
 		Pais.paises.put(fabricante.pais, Pais.paises.get(fabricante.pais) + 1 );
+		Fabricante.fabricantes.put(fabricante, Fabricante.fabricantes.get(fabricante) + 1 );
 	
 	}
 	
