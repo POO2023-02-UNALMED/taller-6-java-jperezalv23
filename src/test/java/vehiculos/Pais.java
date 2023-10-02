@@ -18,7 +18,7 @@ public class Pais {
 		return nombre;
 	}
 	
-	public Pais paisMasVendedor() {
+	public static Pais paisMasVendedor() {
 		return Collections.max(paises.entrySet(), Map.Entry.comparingByValue()).getKey();
 	}
 
