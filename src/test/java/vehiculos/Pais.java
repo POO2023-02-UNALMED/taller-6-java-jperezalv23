@@ -4,10 +4,10 @@ import java.util.*;
 
 public class Pais {
 	String nombre;
-	public static HashMap<String, Integer> paises = new HashMap<String, Integer>();
+	public static HashMap<Pais, Integer> paises = new HashMap<Pais, Integer>();
 	public Pais(String nombre) {
 		this.nombre = nombre;
-		paises.put(nombre, 0);
+		paises.put(this, 0);
 	}
 	
 	public void setNombre(String nombre) {
@@ -18,7 +18,7 @@ public class Pais {
 		return nombre;
 	}
 	
-	public String paisMasVendedor() {
+	public Pais paisMasVendedor() {
 		return Collections.max(paises.entrySet(), Map.Entry.comparingByValue()).getKey();
 	}
 
